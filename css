@@ -1,0 +1,596 @@
+
+Live Scene
+https://streamelements.com/overlay/61147dd6882033e10381a58b/XuVGkXlS8A9tU4WgJs5R1TA0U0OVEksJ3AdGGs6KsyPEJUNq
+Layers
+Settings
+Commands
+Optionals
+Theming
+Theming - Border
+Theming - Gradient Border
+Theming - Divider
+Theming - Location
+Theming - Evidence
+Theming - Counter
+Theming - Optional Objectives
+Name Messages
+Map Messages
+Counter
+Optional Objectives
+No Optional Objectives Message
+Demonologist
+Conclusion Messages
+Position, size and style
+Width
+PX
+Height
+PX
+Top
+Left
+Animation settings
+Duration (seconds)
+Duration (seconds)
+AlertBoxHidden when inactive
+Video
+VideoImage
+ImageLatest subscriber
+mamiittv
+Latest subscriberLatest follower
+chocolaty45
+Latest followerLatest cheer
+jtn2002 - 1000Latest tipper
+DecepticonWillie - $25
+Your stream's chat
+ DanteRavenheart !o alone
+ DanteRavenheart !al
+ DanteRavenheart !ev
+ DanteRavenheart !gn test
+ DanteRavenheart !map as
+ DanteRavenheart !gr
+ DanteRavenheart !boner
+ DanteRavenheart !boner
+ DanteRavenheart !ges
+ DanteRavenheart !ges
+ DanteRavenheart !gn test
+ DanteRavenheart !gn Fabio Arrenze Alone
+ DanteRavenheart !gn Fabio Arrenze Everyone
+ DanteRavenheart !gr
+ DanteRavenheart !GES
+ DanteRavenheart !GO
+ DanteRavenheart !GS
+ DanteRavenheart !GD
+ DanteRavenheart !GR
+ DanteRavenheart !gs
+ DanteRavenheart !go
+ DanteRavenheart !ge
+ DanteRavenheart !gr
+ DanteRavenheart !gst
+ DanteRavenheart !ges
+ DanteRavenheart !gd
+ DanteRavenheart !gf
+ DanteRavenheart !gd
+ DanteRavenheart !gdc
+ DanteRavenheart !gd
+ DanteRavenheart !gdc
+ DanteRavenheart !gr
+ DanteRavenheart !diff e
+ DanteRavenheart !diff m
+ DanteRavenheart !diff h
+ DanteRavenheart !diff easy
+ DanteRavenheart !gd
+ DanteRavenheart !gr
+ DanteRavenheart !gd
+ DanteRavenheart !ges
+ DanteRavenheart !ges
+ DanteRavenheart !gd
+ DanteRavenheart !gdc
+ DanteRavenheart !gdc
+ DanteRavenheart !ge
+ DanteRavenheart !gst
+ DanteRavenheart !gr
+ DanteRavenheart !gf
+ DanteRavenheart !gt
+ DanteRavenheart !gs
+ DanteRavenheart !gr
+ DanteRavenheart !gdc
+ DanteRavenheart !gst
+ DanteRavenheart !gf
+ DanteRavenheart !gst
+ DanteRavenheart !gdc
+ DanteRavenheart !gf
+ DanteRavenheart !gst
+ DanteRavenheart !gdc
+ DanteRavenheart !gf
+ DanteRavenheart !gr
+ DanteRavenheart !gs
+ DanteRavenheart !gdc
+ DanteRavenheart !gf
+ DanteRavenheart !gf
+ DanteRavenheart !gst
+ DanteRavenheart !gst
+ DanteRavenheart !ge
+ DanteRavenheart !ge
+ DanteRavenheart !gt
+ DanteRavenheart !gt
+ DanteRavenheart !ges
+ DanteRavenheart !ges
+ DanteRavenheart !gr
+ DanteRavenheart !gdc
+ DanteRavenheart !gf
+ DanteRavenheart !gs
+ DanteRavenheart !gdc
+ DanteRavenheart !gf
+ DanteRavenheart !gs
+ DanteRavenheart !gr
+ DanteRavenheart !ges
+ DanteRavenheart !gs
+ DanteRavenheart !gf
+ DanteRavenheart !gn test
+ DanteRavenheart !gr
+ DanteRavenheart !gr
+ DanteRavenheart !gn test
+ DanteRavenheart !gn test
+ DanteRavenheart !gf
+ DanteRavenheart !ges
+ DanteRavenheart !ges
+ DanteRavenheart !ge
+ DanteRavenheart !gr
+ DanteRavenheart !gn Stoxie
+ DanteRavenheart !ges
+ DanteRavenheart !ge
+ DanteRavenheart !gst
+ DanteRavenheart !gf
+ DanteRavenheart !gr
+Custom widget
+Custom widget
+555.40px x 592.95px
+Image
+ImageTip goal
+Rent/Bill Help.
+0
+$25
+(2%)
+$1,500
+
+1
+@import url('https://fonts.googleapis.com/css?family={fontFamily}:100,300,400,500,700,900&display=swap');
+2
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro: 400, 300);
+3
+​
+4
+* {
+5
+  font: normal 76px/1 {{fontFamily}}, Helvetica, sans-serif;
+6
+  -o-text-overflow: ellipsis;
+7
+  text-overflow: ellipsis;
+8
+}
+9
+​
+10
+.phas-dashboard {
+11
+  background-color: {{dashboardBackgroundColor}};
+12
+}
+13
+​
+14
+.name {
+15
+  color: {{nameColor}};
+16
+  font-size: {{nameFontSize}}px;
+17
+}
+18
+​
+19
+.objective {
+20
+  color: {{objectivesColor}};
+21
+  font-size: {{objectivesFontSize}}px;
+22
+}
+23
+​
+24
+.conclusion {
+25
+  color: {{conclusionColor}};
+26
+  font-size: {{conclusionFontSize}}px;
+27
+}
+28
+​
+29
+.evidence {
+30
+  width: {{evidencePixelSize}}px;
+31
+  height: {{evidencePixelSize}}px;
+32
+  margin: auto auto;
+33
+}
+34
+​
+35
+.inactive {
+36
+  fill: {{evidenceInactive}};
+37
+}
+38
+​
+39
+.active {
+40
+  fill: {{evidenceActive}};
+41
+}
+42
+​
+43
+.impossible {
+44
+  fill: {{evidenceImpossible}};
+45
+}
+46
+​
+47
+.impossible-completed {
+48
+  fill: {{evidenceImpossibleCompleted}}
+49
+}
+50
+​
+51
+.strikethrough {
+52
+  position: relative;
+53
+}
+54
+​
+55
+.strikethrough::after {
+56
+  border-bottom: {{objectivesStrikethroughSize}}px solid {{objectivesStrikethroughColor}};
+57
+  content: "";
+58
+  left: 0;
+59
+  position: absolute;
+60
+  right: 0;
+61
+  top: calc(50% - {{objectivesStrikethroughSize}}px / 2);
+62
+}
+63
+​
+64
+.evidence-svg-container {
+65
+  height: auto; 
+66
+  margin: 0 {{evidenceMarginSize}}px;
+67
+}
+68
+​
+69
+.divider-color > * + * {
+70
+  border-color: {{dividerColor}} ;
+71
+}
+72
+​
+73
+.phas-border {
+74
+  border-color: {{borderColor}};
+75
+  border-width: {{borderWidth}}px;
+76
+  border-radius: {{borderRadius}}px;
+77
+  border-style: {{borderType}};
+78
+}
+79
+​
+80
+.phas-version {
+81
+  position: fixed;
+82
+  top: 0;
+83
+  left: 0;
+84
+  width: 100%;
+85
+  height: 100vh;
+86
+  background: grey;
+87
+  opacity: 0;
+88
+}
+89
+​
+90
+.version-item {
+91
+  opacity: 0;
+92
+  transition: 1s linear all;
+93
+}
+94
+​
+95
+.show-version-item {
+96
+  opacity: 1;
+97
+  transition: 1s linear all;
+98
+}
+99
+​
+100
+/* @keyframes fade {
+101
+  0%,100% { opacity: 0 }
+102
+  30%,70% { opacity: 1 }
+103
+} */
+104
+​
+105
+.animated-box {
+106
+  border-radius: {{animatedBorderRadius}}px;
+107
+}
+108
+​
+109
+.animated-box h1 {
+110
+  font-weight: 200;
+111
+  font-size: 40px;
+112
+  text-transform: uppercase;
+113
+}
+114
+​
+115
+.animated-box p {
+116
+  font-weight: 200;
+117
+}
+118
+​
+119
+/* The animation starts here */
+120
+.animated-box {
+121
+  position: relative;
+122
+  border-radius: {{animatedBorderRadius}}px;
+123
+}
+124
+​
+125
+.animated-box:after {
+126
+  content: '';
+127
+  position: absolute;
+128
+  top: 0;
+129
+  left: 0;
+130
+  right: 0;
+131
+  bottom: 0;
+132
+  border-radius: {{animatedBorderRadius}}px;
+133
+  background: linear-gradient({{animatedBorderAngle}}deg, {{animatedBorderColor}}, {{animatedBorderColorTwo}}, {{animatedBorderColorThree}});
+134
+  clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px 100%, 100% 100%, 100% 0%, 0% 0%);
+135
+}
+136
+​
+137
+.animated-box-100:after {
+138
+  background-size: 100% 100%;
+139
+}
+140
+​
+141
+.animated-box-300:after {
+142
+  background-size: 300% 300%;
+143
+}
+144
+​
+145
+.animated-box.in:after {
+146
+  animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation {{animationDuration}}s ease-in-out infinite;
+147
+}
+148
+​
+149
+@keyframes gradient-animation {
+150
+  0% {
+151
+    background-position: 15% 0%;
+152
+  }
+153
+  50% {
+154
+    background-position: 85% 100%;
+155
+  }
+156
+  100% {
+157
+    background-position: 15% 0%;
+158
+  }
+159
+}
+160
+​
+161
+@keyframes frame-enter {
+162
+  0% {
+163
+    clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px 100%, 100% 100%, 100% 0%, 0% 0%);
+164
+  }
+165
+  25% {
+166
+    clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), calc(100% - {{animatedBorderWidth}}px) 100%, 100% 100%, 100% 0%, 0% 0%);
+167
+  }
+168
+  50% {
+169
+    clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, 100% 0%, 0% 0%);
+170
+  }
+171
+  75% {
+172
+    -webkit-clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px 0%, 0% 0%);
+173
+  }
+174
+  100% {
+175
+    -webkit-clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, 0% 100%);
+176
+  }
+177
+}
+178
+​
+179
+/* CSS FOR GLITCHED ALERT */
+180
+#console-container {
+181
+  display: inline-block;
+182
+  width: 95%;
+183
+  max-width: 95%;
+184
+  float: right;
+185
+  font-size: 24px;
+186
+  font-family: 'Source Code Pro', 'Inconsolata', monospace;
+187
+}
+188
+​
+189
+#text {
+190
+  display: inline-block;
+191
+  margin: .8em 0;
+192
+  font-size: 18px;
+193
+}
+194
+​
+195
+.cursor {
+196
+  display: inline-block;
+197
+  height: 24px;
+198
+  width: 8px;
+199
+  background: #11f930; 
+200
+  margin-left: -12px;
+201
+}
+202
+​
+203
+.prompt {
+204
+  color: #11f930;
+205
+  height: 24px;
+206
+  font-size: 24px;
+207
+}
+208
+​
+209
+.hide {
+210
+  display: none;
+211
+}
+212
+​
+213
+.counter-theme {
+214
+  font-size: {{counterFontSize}}px;
+215
+  color: {{counterFontColor}};
+216
+}
+217
+​
+218
+.location-theme {
+219
+  font-size: {{locationFontSize}}px;
+220
+  color: {{locationFontColor}};
+221
+}

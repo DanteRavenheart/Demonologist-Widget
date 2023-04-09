@@ -31,8 +31,21 @@ const IBLIS =   "0010101",
   YUREI =       "1000101";
 
 const OPTIONAL_OBJECTIVES = {
-  al: "Alone",
-  ev: "Everyone",
+
+  ca: "Candle",
+  candle: "Candle",
+  st: "Stock",
+  stock: "Stock",
+  ub: "Underbarrel",
+  underbarrel: "Underbarrel",
+  ba: "Barrel",
+  barrel: "Barrel",
+  si: "Silhoutte",
+  silhoutte: "Silhoutte",
+  td: "Time of Death",
+  timeofdeath: "Time of Death",
+  ph: "Photo",
+  photo: "Photo",
 };
 
 const LOCATIONS = {

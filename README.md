@@ -77,3 +77,7 @@ Increment the counter by 1	!counterup
 Decrement the counter by 1	!counterdown
 
 !counter2down	Subtracts one from the counter number
+
+Cursed possesions
+
+!poss tarot, ouija, doll

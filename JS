@@ -178,10 +178,10 @@ const getUserLevelFromData = (data) => {
   } else if (getValueFromObject(config.TRUSTEES, data.nick.toLowerCase())) {
     badgeLevel = PERMISSIONS["trustee"];
   } else {
-    for (let i = 0; i < badges.length; i++) {
-      const level = PERMISSIONS[badges[i].type.toLowerCase()];
+    
+      const level = PERMISSIONS[badges[0].type.toLowerCase()];
       badgeLevel = badgeLevel <= level ? badgeLevel : level;
-    }
+    
   }
   return badgeLevel;
 };

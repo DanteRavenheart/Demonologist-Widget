@@ -1,4 +1,4 @@
-const version = "4.2.1 (Demonologist)";
+const version = "4.2.1 (Apocalypse)";
 
 // Order is important here:
 // EMF-5 | Freezing | Spirit Box | Easel Canvas Drawing | Ectoplasm Stains | Fingerprints | ESG Ghost Reaction
@@ -107,6 +107,7 @@ const PERMISSIONS = {
   vip: 3,
   trustee: 4,
   subscriber: 5,
+  everyone: 6,
 };
 
 // TODO: Move all widget and user state to here
@@ -213,16 +214,7 @@ window.addEventListener("onWidgetLoad", function (obj) {
       }
     );
   }
-  // setting up the SIGHTINGS
 
-  {
-    ["boner", "slenderman", "water"].forEach((v) => {
-      let keys = fieldData[v + "SightingCommand"];
-      keys.split(",").forEach((key) => {
-        SIGHTINGS[key.trim()] = v;
-      });
-    });
-  }
 
   // Sets up all the commands for the widget
   config.commands = {

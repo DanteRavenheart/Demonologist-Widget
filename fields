@@ -38,43 +38,43 @@
   "emfCommand": {
     "type": "string",
     "label": "EMF Toggle Command",
-    "value": "!ge",
+    "value": "!emf",
     "group": "Commands"
   },
   "spiritBoxCommand": {
     "type": "string",
     "label": "Spirit Box Toggle Command",
-    "value": "!gs",
+    "value": "!sb",
     "group": "Commands"
   },
   "fingerprintsCommand": {
     "type": "string",
     "label": "Fingerprints Toggle Command",
-    "value": "!gf",
+    "value": "!fp",
     "group": "Commands"
   },
   "stainsCommand": {
     "type": "string",
     "label": "Ectoplasm Stains Toggle Command",
-    "value": "!gst",
+    "value": "!es",
     "group": "Commands"
   },
   "drawingCommand": {
     "type": "string",
     "label": "Easel Canvas Drawing Toggle Command",
-    "value": "!gd",
+    "value": "!ecd",
     "group": "Commands"
   },
   "freezingCommand": {
     "type": "string",
     "label": "Freezing Temps Toggle Command",
-    "value": "!gt",
+    "value": "!ft",
     "group": "Commands"
   },
   "reactionCommand": {
     "type": "string",
     "label": "Reaction Toggle Command",
-    "value": "!ges",
+    "value": "!esg",
     "group": "Commands"
   },
   "optionalObjectivesCommand": {
@@ -575,7 +575,7 @@
   "noOptionalObjectivesMessage": {
     "type": "text",
     "label": "No Optional Objectives Message",
-    "value": "Widget Author: GlitchedMythos - Editor: DanteRavenheart",
+    "value": "Widget Author: GlitchedMythos",
     "group": "Optional Objectives"
   },
   "zeroEvidenceConclusionString": {

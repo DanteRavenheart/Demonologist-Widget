@@ -20,6 +20,8 @@ If this is going to be a seperate overlay and not put into your main overlay, go
 
 If you have any questions feel free to reach out to me VIA discord and I will answer as quick as I can.
 
+Note these are sample commands below!
+
 
 Name Reset	!gr "name"	Reset the ghost with the name
 

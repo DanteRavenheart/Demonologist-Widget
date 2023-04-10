@@ -81,3 +81,8 @@ Decrement the counter by 1	!counterdown
 Cursed possesions
 
 !poss tarot, ouija, doll
+
+Both Map and Difficulty can be combined in one map command
+
+
+!map ho m

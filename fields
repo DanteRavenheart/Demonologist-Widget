@@ -1,1018 +1,314 @@
-{ "debug": {
-  "type": "dropdown",
-  "label": "Enable Command Debugging",
-  "value": "false",
-  "options": {
-    "true": "Yes",
-    "false": "No"
-  }
-},
-  "resetCommand": {
-    "type": "string",
-    "label": "Name Reset Command",
-    "value": "!gr",
-    "group": "Commands"
-  },
-  "nameCommand": {
-    "type": "string",
-    "label": "Name Input Command",
-    "value": "!gn",
-    "group": "Commands"
-  },
-  "firstnameCommand": {
-    "type": "string",
-    "label": "First Name Input Command",
-    "value": "!gfn",
-    "group": "Commands"
-  },
-  "surnameCommand": {
-    "type": "string",
-    "label": "Surname Input Command",
-    "value": "!gsn",
-    "group": "Commands"
-  },
-  "locationNameCommand": {
-    "type": "string",
-    "label": "Set Map Command",
-    "value": "!map",
-    "group": "Commands"
-  },
-  "locationDiffCommand": {
-    "type": "string",
-    "label": "Set Difficulty Command",
-    "value": "!diff",
-    "group": "Commands"
-  },
-  "possessionCommand": {
-    "type": "string",
-    "label": "Set Cursed Possessions Command",
-    "value": "!poss",
-    "group": "Commands"
-  },
-  "nonePossessionCommand":{
-    "type": "string",
-    "label": "None (Comma Separated)",
-    "value": "none",
-    "group": "Commands"
-  },
-  "dollPossessionCommand":{
-    "type": "string",
-    "label": "Doll (Comma Separated)",
-    "value": "doll,tortured,voodoo",
-    "group": "Commands"
-  },
-  "tarotPossessionCommand":{
-    "type": "string",
-    "label": "Tarot (Comma Separated)",
-    "value": "cards,tarot",
-    "group": "Commands"
-  },
-  "ouijaPossessionCommand":{
-    "type": "string",
-    "label": "Ouija (Comma Separated)",
-    "value": "board,ouija,luigi,milton",
-    "group": "Commands"
-  },
-  "emfCommand": {
-    "type": "string",
-    "label": "EMF Toggle Command",
-    "value": "!emf",
-    "group": "Commands"
-  },
-  "spiritBoxCommand": {
-    "type": "string",
-    "label": "Spirit Box Toggle Command",
-    "value": "!gs",
-    "group": "Commands"
-  },
-  "fingerprintsCommand": {
-    "type": "string",
-    "label": "Fingerprints Toggle Command",
-    "value": "!fp",
-    "group": "Commands"
-  },
-  "stainsCommand": {
-    "type": "string",
-    "label": "Ectoplasm Stains Toggle Command",
-    "value": "!es",
-    "group": "Commands"
-  },
-  "drawingCommand": {
-    "type": "string",
-    "label": "Easel Canvas Drawing Toggle Command",
-    "value": "!ecd",
-    "group": "Commands"
-  },
-  "freezingCommand": {
-    "type": "string",
-    "label": "Freezing Temps Toggle Command",
-    "value": "!ft",
-    "group": "Commands"
-  },
-  "reactionCommand": {
-    "type": "string",
-    "label": "ESG Ghost Reaction Toggle Command",
-    "value": "!esg",
-    "group": "Commands"
-  },
-  "optionalObjectivesCommand": {
-    "type": "string",
-    "label": "Optional Objectives Command",
-    "value": "!oo",
-    "group": "Commands"
-  },
-  "toggleOptObjOneCommand": {
-    "type": "string",
-    "label": "Toggle Optional Objective One",
-    "value": "!o1",
-    "group": "Commands"
-  },
-  "toggleOptObjTwoCommand": {
-    "type": "string",
-    "label": "Toggle Optional Objective Two",
-    "value": "!o2",
-    "group": "Commands"
-  },
-  "toggleOptObjThreeCommand": {
-    "type": "string",
-    "label": "Toggle Optional Objective Three",
-    "value": "!o3",
-    "group": "Commands"
-  },
-  "setCounterNameCommand": {
-    "type": "string",
-    "label": "Set Counter 1 Name Command",
-    "value": "!setcounter",
-    "group": "Commands"
-  },
-  "setCounterNumberCommand": {
-    "type": "string",
-    "label": "Set Counter 1 Number Command",
-    "value": "!setcounternumber",
-    "group": "Commands"
-  },
-  "incrementCounterCommand": {
-    "type": "string",
-    "label": "Increment Counter 1 Command",
-    "value": "!counterup",
-    "group": "Commands"
-  },
-  "decrementCounterCommand": {
-    "type": "string",
-    "label": "Decrement Counter 1 Command",
-    "value": "!counterdown",
-    "group": "Commands"
-  },
-  "setCounter2NameCommand": {
-    "type": "string",
-    "label": "Set Counter 2 Name Command",
-    "value": "!setcounter2",
-    "group": "Commands"
-  },
-  "setCounter2NumberCommand": {
-    "type": "string",
-    "label": "Set Counter 2 Number Command",
-    "value": "!setcounter2number",
-    "group": "Commands"
-  },
-  "incrementCounter2Command": {
-    "type": "string",
-    "label": "Increment Counter 2 Command",
-    "value": "!counter2up",
-    "group": "Commands"
-  },
-  "decrementCounter2Command": {
-    "type": "string",
-    "label": "Decrement Counter 2 Command",
-    "value": "!counter2down",
-    "group": "Commands"
-  },
-  "requiredPermissionCommand": {
-    "type": "string",
-    "label": "Command to change widget permissions",
-    "value": "!setperm",
-    "group": "Commands"
-  },
-  "dashboardBackgroundColor": {
-    "type": "colorpicker",
-    "label": "Background Color",
-    "value": "rgba(0, 0, 0, 0.5)",
-    "group": "Main Widget Options"
-  },
-  "fontFamily": {
-    "type": "googleFont",
-    "label": "Font",
-    "value": "Roboto",
-    "group": "Main Widget Options"
-  },
-  "requiredPermission": {
-    "type": "dropdown",
-    "label": "Permission level required to issue commands",
-    "value": "moderator",
-    "options": {
-      "moderator": "Moderator",
-      "vip": "VIP",
-      "trustee": "Trustee [See list Below]",
-      "subscriber": "Subscriber",
-      "everyone": "Everyone"
-    },
-    "group": "Main Widget Options"
-  },
-  "trustees": {
-    "type": "text",
-    "label": "Comma Seperated list of Trustee Usernames",
-    "value": "", 
-    "group": "Main Widget Options"
-  },
-  "displayName": {
-    "type": "dropdown",
-    "label": "Display Name",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Ghost Name"
-  },
-  "noNameString": {
-    "type": "text",
-    "label": "No Ghost Name Message",
-    "value": "New Ghostie...",
-    "group": "Ghost Name"
-  },
-  "ghostNameString": {
-    "type": "text",
-    "label": "Ghost Name: [name]",
-    "value": "Name: [name]",
-    "group": "Ghost Name"
-  },
-  "nameColor": {
-    "type": "colorpicker",
-    "label": "Name Color",
-    "value": "rgb(255, 255, 255)",
-    "group": "Ghost Name"
-  },
-  "nameFontSize": {
-    "type": "number",
-    "label": "Name Font Size",
-    "value": 24,
-    "step": 1,
-    "min": 1,
-    "group": "Ghost Name"
-  },
-  "autoCapitalize": {
-    "type": "dropdown",
-    "label": "Auto Capitalize Name",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Ghost Name"
-  },
-  "nameTopMargin": {
-    "type": "number",
-    "label": "Name Top Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Ghost Name"
-  },
-  "nameBottomMargin": {
-    "type": "number",
-    "label": "Name Bottom Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Ghost Name"
-  },
-  "displayLocation": {
-    "type": "dropdown",
-    "label": "Display Map Name",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Map"
-  },
-  "noLocationString": {
-    "type": "text",
-    "label": "No Map Selected Message",
-    "value": "No Map Selected...",
-    "group": "Map"
-  },
-  "locationFontColor": {
-    "type": "colorpicker",
-    "label": "Map Name Color",
-    "value": "rgb(255, 255, 255)",
-    "group": "Map"
-  },
-  "locationFontSize": {
-    "type": "number",
-    "label": "Map Name Font Size",
-    "value": 16,
-    "step": 1,
-    "min": 1,
-    "group": "Map"
-  },
-  "difficultyFontColor": {
-    "type": "colorpicker",
-    "label": "Map Difficulty Color",
-    "value": "rgb(255, 255, 255)",
-    "group": "Map"
-  },
-  "difficultyFontSize": {
-    "type": "number",
-    "label": "Map Difficulty Font Size",
-    "value": 16,
-    "step": 1,
-    "min": 1,
-    "group": "Map"
-  },
-  "locationSpacing": {
-    "type": "dropdown",
-    "label": "Map Bar Spacing",
-    "value": "justify-between",
-    "options": {
-      "justify-start": "Left Align",
-      "justify-end": "Right Align",
-      "justify-center": "Center Align",
-      "justify-between": "Space Between",
-      "justify-around": "Space Around",
-      "justify-evenly": "Space Evenly"
-    },
-    "group": "Map"
-  },
-  "locationTopMargin": {
-    "type": "number",
-    "label": "Map Top Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Map"
-  },
-  "locationBottomMargin": {
-    "type": "number",
-    "label": "Map Bottom Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Map"
-  },
-  "displayCursedPossessions": {
-    "type": "dropdown",
-    "label": "Display Cursed Possessions",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Cursed Possessions"
-  },
-  "possessionIconInactiveColor": {
-    "type": "colorpicker",
-    "label": "Cursed Possession Inactive Color",
-    "value": "rgba(255, 255, 255, 0.8)",
-    "group": "Cursed Possessions"
-  },
-  "possessionIconActiveColor": {
-    "type": "colorpicker",
-    "label": "Cursed Possession Active Color",
-    "value": "rgba(0, 230, 64, 1)",
-    "group": "Cursed Possessions"
-  },
-  "possessionIconHeight": {
-    "type": "number",
-    "label": "Cursed Possession Icon Height",
-    "value": 30,
-    "step": 0.5,
-    "min": 0.5,
-    "group": "Cursed Possessions"
-  },
-  "displayEvidence": {
-    "type": "dropdown",
-    "label": "Display Evidence",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Evidence"
-  },
-  "markImpossibleEvidence": {
-    "type": "dropdown",
-    "label": "Mark Impossible Evidence",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Evidence"
-  },
-  "useEvidenceImpossibleCompleted": {
-    "type": "dropdown",
-    "label": "Use different impossible color when complete",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Evidence"
-  },
-  "evidenceActive": {
-    "type": "colorpicker",
-    "label": "Active Evidence",
-    "value": "rgba(50, 205, 50, 1)",
-    "group": "Evidence"
-  },
-  "evidenceInactive": {
-    "type": "colorpicker",
-    "label": "Inactive Evidence",
-    "value": "rgb(255, 255, 255)",
-    "group": "Evidence"
-  },
-  "evidenceImpossible": {
-    "type": "colorpicker",
-    "label": "Impossible Evidence",
-    "value": "rgba(234, 66, 29, 0.6)",
-    "group": "Evidence"
-  },
-  "evidenceImpossibleCompleted": {
-    "type": "colorpicker",
-    "label": "Complete Impossible Evidence",
-    "value": "rgba(28, 69, 233, 0.3)",
-    "group": "Evidence"
-  },
-  "evidenceNegative": {
-    "type": "colorpicker",
-    "label": "Negative X Evidence",
-    "value": "rgba(255, 0, 0, 1.0)",
-    "group": "Evidence"
-  },
-  "evidencePixelSize": {
-    "type": "number",
-    "label": "Evidence Pixel Size",
-    "value": 50,
-    "step": 1,
-    "min": 1,
-    "group": "Evidence"
-  },
-  "evidenceMarginSize": {
-    "type": "number",
-    "label": "Evidence Horizontal Margin Size",
-    "value": 5,
-    "step": 0.25,
-    "min": 0.25,
-    "group": "Evidence"
-  },
-  "evidenceContainerTopMargin": {
-    "type": "number",
-    "label": "Evidence Top Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Evidence"
-  },
-  "evidenceContainerBottomMargin": {
-    "type": "number",
-    "label": "Evidence Bottom Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Evidence"
-  },
-  "displayCounter": {
-    "type": "dropdown",
-    "label": "Display Counter(s)",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Counters"
-  },
-  "displayCounter2": {
-    "type": "dropdown",
-    "label": "Display Counter 2",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Counters"
-  },
-  "counterFlexDirection": {
-    "type": "dropdown",
-    "label": "Counter Direction",
-    "value": "flex-col",
-    "options": {
-      "flex-col": "Vertical",
-      "flex-row": "Horizontal"
-    },
-    "group": "Counters"
-  },
-  "countersSpacing": {
-    "type": "dropdown",
-    "label": "Counter Spacing",
-    "value": "justify-between",
-    "options": {
-      "justify-start": "Left",
-      "justify-end": "Right",
-      "justify-center": "Center",
-      "justify-between": "Between",
-      "justify-around": "Around",
-      "justify-evenly": "Evenly"
-    },
-    "group": "Counters"
-  },
-  "counterDefaultString": {
-    "type": "text",
-    "label": "Counter Default Name",
-    "value": "Counter:",
-    "group": "Counters"
-  },
-  "counter2DefaultString": {
-    "type": "text",
-    "label": "Counter 2 Default Name",
-    "value": "Counter 2:",
-    "group": "Counters"
-  },
-  "counterFontColor": {
-    "type": "colorpicker",
-    "label": "Counter Color",
-    "value": "rgb(255, 255, 255)",
-    "group": "Counters"
-  },
-  "counterFontSize": {
-    "type": "number",
-    "label": "Counter Font Size",
-    "value": 24,
-    "step": 1,
-    "min": 1,
-    "group": "Counters"
-  },
-  "counterContainerTopMargin": {
-    "type": "number",
-    "label": "Counters Top Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Counters"
-  },
-  "counterContainerBottomMargin": {
-    "type": "number",
-    "label": "Counters Bottom Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Counters"
-  },
-  "displayOptionalObjectives": {
-    "type": "dropdown",
-    "label": "Display Optional Objectives",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Optional Objectives"
-  },
-  "noOptionalObjectivesMessage": {
-    "type": "text",
-    "label": "No Optional Objectives Message",
-    "value": "Widget Author: GlitchedMythos - Editor DanteRavenheart",
-    "group": "Optional Objectives"
-  },
-  "objectivesColor": {
-    "type": "colorpicker",
-    "label": "Objectives Text Color",
-    "value": "rgb(255, 255, 255)",
-    "group": "Optional Objectives"
-  },
-  "objectivesStrikethroughColor": {
-    "type": "colorpicker",
-    "label": "Objectives Strikethrough Color",
-    "value": "rgba(234, 66, 29, 0.83)",
-    "group": "Optional Objectives"
-  },
-  "objectivesFontSize": {
-    "type": "number",
-    "label": "Objectives Font Size",
-    "value": 16,
-    "step": 1,
-    "min": 1,
-    "group": "Optional Objectives"
-  },
-  "objectivesStrikethroughSize": {
-    "type": "number",
-    "label": "Objectives Strikethrough Size",
-    "value": 6,
-    "step": 0.25,
-    "min": 0.25,
-    "group": "Optional Objectives"
-  },
-  "objectivesSpacing": {
-    "type": "dropdown",
-    "label": "Optional Objectives Spacing",
-    "value": "justify-between",
-    "options": {
-      "justify-start": "Left Align",
-      "justify-end": "Right Align",
-      "justify-center": "Center Align",
-      "justify-between": "Space Between",
-      "justify-around": "Space Around",
-      "justify-evenly": "Space Evenly"
-    },
-    "group": "Optional Objectives"
-  },
+@import url('https://fonts.googleapis.com/css?family={fontFamily}:100,300,400,500,700,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300);
 
-  "optionalsTopMargin": {
-    "type": "number",
-    "label": "Optional Objectives Top Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Optional Objectives"
-  },
-  "optionalsBottomMargin": {
-    "type": "number",
-    "label": "Optional Objectives Bottom Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Optional Objectives"
-  },
-  "displayConclusion": {
-    "type": "dropdown",
-    "label": "Display Conclusion",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Conclusion"
-  },
-  "conclusionColor": {
-    "type": "colorpicker",
-    "label": "Conclusion Color",
-    "value": "rgb(60, 251, 57)",
-    "group": "Conclusion"
-  },
-  "conclusionFontSize": {
-    "type": "number",
-    "label": "Conclusion Font Size",
-    "value": 16,
-    "step": 1,
-    "min": 1,
-    "group": "Conclusion"
-  },
-  "conclusionTopMargin": {
-    "type": "number",
-    "label": "Conclusion Top Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Conclusion"
-  },
-  "conclusionBottomMargin": {
-    "type": "number",
-    "label": "Conclusion Bottom Margin",
-    "value": 5,
-    "step": 1,
-    "min": 0,
-    "group": "Conclusion"
-  },
-  "zeroEvidenceConclusionString": {
-    "type": "text",
-    "label": "Zero Evidence",
-    "value": "Waiting for Evidence",
-    "group": "Conclusion Messages - Empty for Default"
-  },
-  "oneEvidenceConclusionString": {
-    "type": "text",
-    "label": "One Evidence",
-    "value": "Not sure yet...",
-    "group": "Conclusion Messages - Empty for Default"
-  },
-  "impossibleConclusionString": {
-    "type": "text",
-    "label": "Too much evidence entered",
-    "value": "It's over 9000!!",
-    "group": "Conclusion Messages - Empty for Default"
-  },
-  "iblisString": {
-    "type": "text",
-    "label": "Iblis - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "demonString": {
-    "type": "text",
-    "label": "Demon - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "goryoString": {
-    "type": "text",
-    "label": "Goryo - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "hantuString": {
-    "type": "text",
-    "label": "Hantu - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "jinnString": {
-    "type": "text",
-    "label": "Jinn - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "mareString": {
-    "type": "text",
-    "label": "Mare - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "mylingString": {
-    "type": "text",
-    "label": "Myling - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "oniString": {
-    "type": "text",
-    "label": "Oni - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "abaddonString": {
-    "type": "text",
-    "label": "Abaddon - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "boogeyString": {
-    "type": "text",
-    "label": "Boogey - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "onryoString": {
-    "type": "text",
-    "label": "Onryo - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "naamahString": {
-    "type": "text",
-    "label": "Namaah - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "agashString": {
-    "type": "text",
-    "label": "Agash - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "deogenString": {
-    "type": "text",
-    "label": "Deogen - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "raijuString": {
-    "type": "text",
-    "label": "Raiju - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "guipoString": {
-    "type": "text",
-    "label": "Guipo - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "poltergeistString": {
-    "type": "text",
-    "label": "Poltergeist - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "revenantString": {
-    "type": "text",
-    "label": "Revenant - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "shadeString": {
-    "type": "text",
-    "label": "Shade - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "gulString": {
-    "type": "text",
-    "label": "Gul - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "wraithString": {
-    "type": "text",
-    "label": "Wraith - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "yokaiString": {
-    "type": "text",
-    "label": "Yokai - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "thayeString": {
-    "type": "text",
-    "label": "Thaye - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "yureiString": {
-    "type": "text",
-    "label": "Yurei - Leave empty 4 default",
-    "value": "",
-    "group": "Conclusion Messages"
-  },
-  "dashboardTopMargin": {
-    "type": "number",
-    "label": "Border Top Margin",
-    "value": 20,
-    "step": 1,
-    "min": 0,
-    "group": "Theming - Border Margins"
-  },
-  "dashboardRightMargin": {
-    "type": "number",
-    "label": "Border Right Margin",
-    "value": 20,
-    "step": 1,
-    "min": 0,
-    "group": "Theming - Border Margins"
-  },
-  "dashboardBottomMargin": {
-    "type": "number",
-    "label": "Border Bottom Margin",
-    "value": 20,
-    "step": 1,
-    "min": 0,
-    "group": "Theming - Border Margins"
-  },
-  "dashboardLeftMargin": {
-    "type": "number",
-    "label": "Border Left Margin",
-    "value": 20,
-    "step": 1,
-    "min": 0,
-    "group": "Theming - Border Margins"
-  },
-  "borderColor": {
-    "type": "colorpicker",
-    "label": "Border Color",
-    "value": "rgb(255, 255, 255)",
-    "group": "Theming - Single-Color Border"
-  },
-  "borderWidth": {
-    "type": "number",
-    "label": "Border Thickness",
-    "value": 4,
-    "step": 0.25,
-    "min": 0,
-    "group": "Theming - Single-Color Border"
-  },
-  "borderRadius": {
-    "type": "number",
-    "label": "Border Radius (Corner Rounding)",
-    "value": 15,
-    "step": 1,
-    "min": 0,
-    "group": "Theming - Single-Color Border"
-  },
-  "borderType": {
-    "type": "dropdown",
-    "label": "Border Type",
-    "value": "solid",
-    "options": {
-      "solid": "Solid Border",
-      "dashed": "Dashed Border",
-      "dotted": "Dotted Border",
-      "double": "Double Border",
-      "none": "No Border"
-    },
-    "group": "Theming - Single-Color Border"
-  },
-  "useGradientBorder": {
-    "type": "dropdown",
-    "label": "Use Gradient Border?",
-    "value": "no",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Theming - Gradient Border"
-  },
-  "useAnimatedBorder": {
-    "type": "dropdown",
-    "label": "Animate Border?",
-    "value": "yes",
-    "options": {
-      "yes": "Yes",
-      "no": "No"
-    },
-    "group": "Theming - Gradient Border"
-  },
-  "animationDuration": {
-    "type": "slider",
-    "label": "Animate Duration (sec)",
-    "value": 4,
-    "min": 1,
-    "max": 10,
-    "step": 0.5,
-    "group": "Theming - Gradient Border"
-  },
-  "animatedBorderColor": {
-    "type": "colorpicker",
-    "label": "Border Color One",
-    "value": "rgb(255, 255, 255)",
-    "group": "Theming - Gradient Border"
-  },
-  "animatedBorderColorTwo": {
-    "type": "colorpicker",
-    "label": "Border Color Two",
-    "value": "rgb(248, 203, 248)",
-    "group": "Theming - Gradient Border"
-  },
-  "animatedBorderColorThree": {
-    "type": "colorpicker",
-    "label": "Border Color Three",
-    "value": "rgb(255, 0, 255)",
-    "group": "Theming - Gradient Border"
-  },
-  "animatedBorderAngle": {
-    "type": "number",
-    "label": "Border Angle",
-    "value": 0,
-    "step": 1,
-    "min": -180,
-    "max": 180,
-    "group": "Theming - Gradient Border"
-  },
-  "animatedBorderWidth": {
-    "type": "number",
-    "label": "Border Thickness",
-    "value": 4,
-    "step": 0.25,
-    "min": 0.25,
-    "group": "Theming - Gradient Border"
-  },
-  "animatedBorderRadius": {
-    "type": "number",
-    "label": "Border Radius (Corner Rounding)",
-    "value": 15,
-    "step": 1,
-    "min": 0,
-    "group": "Theming - Gradient Border"
-  },
-  "dividerColor": {
-    "type": "colorpicker",
-    "label": "Divider Color",
-    "value": "rgba(255, 255, 255, 1)",
-    "group": "Theming - Divider"
-  },
-  "dividerWidth": {
-    "type": "dropdown",
-    "label": "Divider Width",
-    "value": "divide-y",
-    "options": {
-      "divide-y": "1px",
-      "divide-y-2": "2px",
-      "divide-y-4": "4px",
-      "divide-y-8": "8px"
-    },
-    "group": "Theming - Divider"
-  },
-  "dividerType": {
-    "type": "dropdown",
-    "label": "Choose a divider type:",
-    "value": "divide-dashed",
-    "options": {
-      "divide-solid": "Solid Divider",
-      "divide-dashed": "Dashed Divider",
-      "divide-dotted": "Dotted Divider",
-      "divide-double": "Double Divider",
-      "divide-none": "No Divider"
-    },
-    "group": "Theming - Divider"
+* {
+  font: normal 76px/1 {{fontFamily}}, Helvetica, sans-serif;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.phas-dashboard {
+  background-color: {{dashboardBackgroundColor}};
+  /* Top Right Bottom Left */
+  /* Yes, this is padding. I am calling it margin to keep naming "similar" */
+  padding: {{dashboardTopMargin}}px {{dashboardRightMargin}}px {{dashboardBottomMargin}}px {{dashboardLeftMargin}}px;
+}
+
+.name {
+  color: {{nameColor}};
+  font-size: {{nameFontSize}}px;
+  margin-top: {{nameTopMargin}}px;
+  margin-bottom: {{nameBottomMargin}}px;
+}
+
+.objective {
+  color: {{objectivesColor}};
+  font-size: {{objectivesFontSize}}px;
+}
+
+.optionals {
+  margin-top: {{optionalsTopMargin}}px;
+  margin-bottom: {{optionalsBottomMargin}}px;
+}
+
+.conclusion {
+  color: {{conclusionColor}};
+  font-size: {{conclusionFontSize}}px;
+  margin-top: {{conclusionTopMargin}}px;
+  margin-bottom: {{conclusionBottomMargin}}px;
+}
+
+.evidence {
+  width: {{evidencePixelSize}}px;
+  height: {{evidencePixelSize}}px;
+  margin: auto auto;
+}
+
+.negative {
+  position: absolute;
+  fill: {{evidenceNegative}};
+}
+
+.inactive {
+  fill: {{evidenceInactive}};
+}
+
+.active {
+  fill: {{evidenceActive}};
+}
+
+.impossible {
+  fill: {{evidenceImpossible}};
+}
+
+.impossible-completed {
+  fill: {{evidenceImpossibleCompleted}}
+}
+
+.strikethrough {
+  position: relative;
+}
+
+.strikethrough::after {
+  border-bottom: {{objectivesStrikethroughSize}}px solid {{objectivesStrikethroughColor}};
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: calc(50% - {{objectivesStrikethroughSize}}px / 2);
+}
+
+.evidence-inner-container {
+  margin-top: {{evidenceContainerTopMargin}}px;
+  margin-bottom: {{evidenceContainerBottomMargin}}px;
+}
+
+.evidence-svg-container {
+  height: auto; 
+  margin: 0 {{evidenceMarginSize}}px;
+}
+
+.sighting-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.sighting-inactive {
+  fill: {{sightingIconInactiveColor}};
+}
+
+.sighting-active {
+  fill: {{sightingIconActiveColor}};
+  height: {{sightingIconHeight}}px;
+  width: {{sightingIconHeight}}px;
+}
+
+.sighting-svg-container {
+  height: {{sightingIconHeight}}px;
+  width: {{sightingIconHeight}}px;
+  margin-left: 10px;
+}
+
+.possession-inactive {
+  display: none;
+  visibility: hidden;
+}
+
+.possession-active {
+  fill: {{possessionIconActiveColor}};
+  height: {{possessionIconHeight}}px;
+  width: {{possessionIconHeight}}px;
+}
+
+.possession-svg-container {
+  height: {{possessionIconHeight}}px;
+  width: {{possessionIconHeight}}px;
+}
+
+.water-svg-container {
+  height: {{waterIconHeight}}px;
+  width: {{waterIconHeight}}px;
+  margin-left: 10px;
+}
+
+.water-inactive {
+  fill: {{waterIconInactiveColor}};
+}
+
+.water-active {
+  fill: {{waterIconActiveColor}};
+}
+
+.divider-color > * + * {
+  border-color: {{dividerColor}} ;
+}
+
+.phas-border {
+  border-color: {{borderColor}};
+  border-width: {{borderWidth}}px;
+  border-radius: {{borderRadius}}px;
+  border-style: {{borderType}};
+}
+
+.phas-version {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: grey;
+  opacity: 0;
+}
+
+.version-item {
+  opacity: 0;
+  transition: 1s linear all;
+}
+
+.show-version-item {
+  opacity: 1;
+  transition: 1s linear all;
+}
+
+/* @keyframes fade {
+  0%,100% { opacity: 0 }
+  30%,70% { opacity: 1 }
+} */
+
+.animated-box {
+  border-radius: {{animatedBorderRadius}}px;
+}
+
+.animated-box h1 {
+  font-weight: 200;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.animated-box p {
+  font-weight: 200;
+}
+
+/* The animation starts here */
+.animated-box {
+  position: relative;
+  border-radius: {{animatedBorderRadius}}px;
+}
+
+.animated-box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: {{animatedBorderRadius}}px;
+  background: linear-gradient({{animatedBorderAngle}}deg, {{animatedBorderColor}}, {{animatedBorderColorTwo}}, {{animatedBorderColorThree}});
+  clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.animated-box-100:after {
+  background-size: 100% 100%;
+}
+
+.animated-box-300:after {
+  background-size: 300% 300%;
+}
+
+.animated-box.in:after {
+  animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation {{animationDuration}}s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 15% 0%;
   }
+  50% {
+    background-position: 85% 100%;
+  }
+  100% {
+    background-position: 15% 0%;
+  }
+}
+
+@keyframes frame-enter {
+  0% {
+    clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px calc(100% - {{animatedBorderWidth}}px), {{animatedBorderWidth}}px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), calc(100% - {{animatedBorderWidth}}px) calc(100% - {{animatedBorderWidth}}px), calc(100% - {{animatedBorderWidth}}px) 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, calc(100% - {{animatedBorderWidth}}px) {{animatedBorderWidth}}px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px {{animatedBorderWidth}}px, {{animatedBorderWidth}}px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, {{animatedBorderWidth}}px 100%, 0% 100%);
+  }
+}
+
+/* CSS FOR GLITCHED ALERT */
+#console-container {
+  display: inline-block;
+  width: 95%;
+  max-width: 95%;
+  float: right;
+  font-size: 24px;
+  font-family: 'Source Code Pro', 'Inconsolata', monospace;
+}
+
+#text {
+  display: inline-block;
+  margin: .8em 0;
+  font-size: 18px;
+}
+
+.cursor {
+  display: inline-block;
+  height: 24px;
+  width: 8px;
+  background: #11f930; 
+  margin-left: -12px;
+}
+
+.prompt {
+  color: #11f930;
+  height: 24px;
+  font-size: 24px;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  display: hidden;
+}
+
+.counters {
+  width: 100%;
+  margin-top: {{counterContainerTopMargin}}px;
+  margin-bottom: {{counterContainerBottomMargin}}px;
+}
+
+.counter-theme {
+  font-size: {{counterFontSize}}px;
+  color: {{counterFontColor}};
+}
+
+.location {
+  margin-top: {{locationTopMargin}}px;
+  margin-bottom: {{locationBottomMargin}}px;
+}
+
+.location-theme {
+  font-size: {{locationFontSize}}px;
+  color: {{locationFontColor}};
+}
+
+.difficulty {
+  font-size: {{difficultyFontSize}}px;
+  color: {{difficultyFontColor}};
 }

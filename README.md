@@ -11,7 +11,11 @@ You will repeat that for each seperate document CSS goes into the CSS Tab, JS go
 Again Replace everything in each category. Data you do not need to touch.
 From there should you have done it right, you will now see under where it says OPEN EDITOR drop down menu's this is how from here you can customize the widget to your
 liking. From changing the chat commands to customizing the borders.
+
+
 Make sure you hit the giant blue SAVE button.
+
+
 If this is going to be a seperate overlay and not put into your main overlay, go to sources, add new browser source, add like you would any other overlay.
 
 If you have any questions feel free to reach out to me VIA discord and I will answer as quick as I can.

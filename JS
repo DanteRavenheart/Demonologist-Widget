@@ -5,7 +5,7 @@ const version = "4.2.1 (Apocalypse)";
 // 1 is true
 // 0 is false
 
-const IBLIS =   "0010101",
+const IBLIS =   "0011001",
   DEMON =       "0101100",
   GORYO =       "1000011",
   HANTU =       "0111000",

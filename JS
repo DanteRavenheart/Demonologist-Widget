@@ -53,18 +53,27 @@ const SIGHTINGS = {};
 const OPTIONAL_OBJECTIVES = {
   ca: "Candle",
   candle: "Candle",
-  st: "Stock",
-  stock: "Stock",
-  ub: "Underbarrel",
-  underbarrel: "Underbarrel",
-  ba: "Barrel",
-  barrel: "Barrel",
+  gp: "Gun Parts",
+  gunparts: "Gun Parts",
   si: "Silhoutte",
   silhoutte: "Silhoutte",
   td: "Time of Death",
   timeofdeath: "Time of Death",
   ph: "Photo",
   photo: "Photo",
+  no: "Lost Note",
+  note: "Lost Note",
+  blood: "Blood Bags",
+  bl: "Bloods Bags",
+  ri: "Pentagram Ritual",
+  ritual: "Pentagram Ritual",
+  sa: "Salt Bags",
+  ra: "Rats in Boiler",
+  rats: "Rats in Boiler",
+  orbs: "Ghost Orbs",
+  cd: "Computer Data",
+  computer: "Computer Data",
+  
 }
 
 const LOCATIONS = [
